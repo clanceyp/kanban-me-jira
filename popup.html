@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kanban - Status Popup</title>
+        <base target="_blank"/>
+        <link rel="stylesheet" type="text/css" href="lib/css/style.css"/>
+		<script type="text/javascript" src="lib/js/zepto.js"></script>
+		<script type="text/javascript" src="lib/js/constants.js"></script>
+		<script type="text/javascript" src="lib/js/popup.js"></script>
+		<style>
+			h1 {margin-right:40px;font-size:1.1em;padding-left:10px}
+			a {text-decoration: none;}
+			ul, li {
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="refresh">
+                <span>Refresh</span><img id="refreshIcon" src="lib/i/reload19.png" alt="Refresh Button" />
+            </div>
+			<h1></h1>
+	        <p>My tickets</p>
+            <div id="display"><ul></ul></div>
+			<p></p>
+			<nav style="text-align:center;">
+				<a id="login" href="">Login</a>
+				| <a href="kanban.html">Kanban</a>
+				| <a href="options.html">Configuration</a>
+			</nav>
+        </div>
+    </body>
+</html>
