@@ -3,16 +3,15 @@
     <head>
         <title>Jenkins Monitor - Status Popup</title>
 		<script type="text/javascript" src="lib/js/vendor/zepto.js"></script>
-		<script type="text/javascript" src="lib/js/vendor/underscore.js"></script>
-		<script type="text/javascript" src="lib/js/constants.js"></script>
+	    <script type="text/javascript" src="lib/js/vendor/can.js"></script>
+	    <script type="text/javascript" src="lib/js/vendor/can.view.mustache.js"></script>
+	    <script type="text/javascript" src="lib/js/vendor/d3.js" charset="utf-8"></script>
+	    <script type="text/javascript" src="lib/js/constants.js"></script>
 		<script type="text/javascript" src="lib/js/kanban.js"></script>
 		<link href="lib/css/kanban.css" type="text/css" rel="stylesheet" />
 		<style>
 			html #divDateDisplay, html #divDateDisplay_under {
 				background-image:url(lib/i/reload19.png);
-			}
-			html #divInfo {
-				background-image:url(lib/i/background.png);
 			}
 		</style>
     </head>
@@ -31,5 +30,8 @@
 
             </div>
         </div>
+        <script id="template" type="text/mustache">
+
+        </script>
     </body>
 </html>
