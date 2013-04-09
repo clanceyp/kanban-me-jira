@@ -18,6 +18,7 @@
 			"lib/js/constants.js"
 			,"lib/js/vendor/underscore.js"
 			,"lib/js/vendor/zepto.js"
+			,"lib/js/vendor/can.js"
 			,"lib/js/background.js"
 		]
 	}

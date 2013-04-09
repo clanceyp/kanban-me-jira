@@ -2,29 +2,28 @@
 <html>
     <head>
         <title>Jenkins Monitor - Status Popup</title>
+		<link rel="stylesheet/less" type="text/css" href="lib/css/kanban.less" />
+		<script type="text/javascript" src="lib/js/vendor/less.js"></script>
+		<!-- load less first -->
 		<script type="text/javascript" src="lib/js/vendor/zepto.js"></script>
 	    <script type="text/javascript" src="lib/js/vendor/can.js"></script>
 	    <script type="text/javascript" src="lib/js/vendor/can.view.mustache.js"></script>
-	    <script type="text/javascript" src="lib/js/vendor/d3.js" charset="utf-8"></script>
-	    <script type="text/javascript" src="lib/js/constants.js"></script>
+		<script type="text/javascript" src="lib/js/vendor/d3.js" charset="utf-8"></script>
+		<script type="text/javascript" src="lib/js/constants.js"></script>
 		<script type="text/javascript" src="lib/js/kanban.js"></script>
-		<link href="lib/css/kanban.css" type="text/css" rel="stylesheet" />
 		<style>
+			@import url("http://fonts.googleapis.com/css?family=Rock+Salt");
 			html #divDateDisplay, html #divDateDisplay_under {
 				background-image:url(lib/i/reload19.png);
 			}
 		</style>
     </head>
-    <body class="dark">
+    <body>
         <div id="wrapper">
-        	<div id="divDateDisplay">
-        		
-        	</div>
-        	<div id="divDateDisplay_under">
-        		&nbsp;
-        	</div>
-			<div id="divInfo">
-				
+			<div class="table">
+				<div id="divInfo" class="row">
+
+				</div>
 			</div>
             <div id="divRadiator">
 
@@ -33,5 +32,10 @@
         <script id="template" type="text/mustache">
 
         </script>
+		<script id="templateTitles"  type="text/mustache">
+			{{#columns}}
+				<div class="cell"><a><span>{{title}}</span></a></div>
+			{{/columns}}
+		</script>
     </body>
 </html>

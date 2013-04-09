@@ -8,20 +8,7 @@
 	    <script type="text/javascript" src="lib/js/vendor/can.js"></script>
 	    <script type="text/javascript" src="lib/js/vendor/can.view.mustache.js"></script>
 	    <script type="text/javascript" src="lib/js/constants.js"></script>
-		<script type="text/javascript" src="lib/js/popup.js?nthnthnth"></script>
-		<style>
-			h1 {margin-right:40px;font-size:1.1em;}
-			h2 {font-size: 1em;}
-			#wrapper {
-				padding-left:10px;
-			}
-			#display {
-				padding-left:2px;
-				width:340px;
-			}
-			a {text-decoration: none;}
-			a:hover {text-decoration: underline}
-		</style>
+		<script type="text/javascript" src="lib/js/popup.js"></script>
     </head>
     <body>
         <div id="wrapper">
@@ -32,12 +19,14 @@
 	        <h2></h2>
 	        <p class="message"></p>
             <div id="display"></div>
-			<nav style="text-align:center;">
+        </div>
+		<footer>
+			<nav>
 				<a id="login" href="">JIRA3</a>
 				| <a href="kanban.html">Kanban</a>
 				| <a href="options.html">Configuration</a>
 			</nav>
-        </div>
+		</footer>
 
         <script id="template" type="text/mustache">
 

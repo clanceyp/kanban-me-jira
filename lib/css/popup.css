@@ -1,11 +1,18 @@
 html {
 }
 body {
+	background-color: #DEF1FA;
+	background-image: url(http://www.atlassian.com/dms/wac/images/icons-home.png);
+	background-position: -200px bottom;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
 	font-family: sans-serif;
 }
 #wrapper {
 	min-height: 300px;
 	min-width: 320px;
+	padding:5px 15px 40px 15px ;
 }
 #refreshIcon {
 	border: 0;
@@ -23,4 +30,45 @@ body {
 }
 #refresh:hover span {
     opacity: 0.5
+}
+@import url(http://fonts.googleapis.com/css?family=Rokkitt);
+h1,h2 {
+	color:#036;
+	font-family: "Rokkitt",serif;
+	font-size:1.6em;
+	font-weight: normal;
+	margin:0 0 8px 0;
+}
+h2 {font-size: 1.2em;}
+summary::-webkit-details-marker {
+	color:#036;
+	font-size: 80%;
+}
+details[open] summary::-webkit-details-marker {
+	color: #800;
+}
+summary {
+	cursor:pointer;
+	outline:none;
+	margin-top:4px;
+}
+#display {
+	font-size: 0.8em;
+	padding-left:2px;
+	width:340px;
+}
+a {
+	color:#036;
+	text-decoration: none;
+}
+a:hover {text-decoration: underline}
+footer {
+	background-color: #fff;
+	border-top:1px dashed #888;
+	bottom:0;
+	font-size: 0.8em;
+	padding:8px 0;
+	position: absolute;
+	text-align: center;
+	width:100%;
 }

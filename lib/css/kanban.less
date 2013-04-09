@@ -1,0 +1,82 @@
+
+
+@base-color: #fff;
+@base-bg-image: "dark_wood";
+@base-font-family: "Rock Salt";
+
+@ticket-height: 160px;
+@ticket-width: 300px;
+@ticket-thumbnail: 100px;
+
+
+
+
+.box-shadow(@style: 0 0 5px, @alpha: 50%) when (isnumber(@alpha)) {
+	box-shadow: @style rgba(0, 0, 0, @alpha);
+}
+.fontsize(@family) when (@family = "Rock Salt"){
+	font-size: 70%;
+	line-height: 160%;
+}
+body {
+	background-color: @base-color;
+	background-image: url("/lib/i/bg/@{base-bg-image}.png" );
+	font-family: @base-font-family;
+
+	.fontsize(@base-font-family)
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin:0 0 4px 0;
+}
+*.ticket {
+	background-color: #fff;
+	background-image: url("/lib/i/lined_paper_transparent.png" );
+	display:inline-block;
+	min-height: @ticket-height;
+	padding:5px;
+	position: absolute;
+	width: (@ticket-width - 10);
+
+	*.left,
+	*.right {
+		left:0;
+		min-height: @ticket-height;
+		padding:10px 5px 0 5px ;
+		position: absolute;
+		text-align: center;
+		top:0;
+		width: (@ticket-width / 2) - 10 ;
+	}
+	*.right {
+		border-left:1px dashed #888;
+		left:auto;
+		right:0;
+	}
+	img {
+		background-color: #fff;
+		bottom:-30px;
+		border:2px solid black;
+		left:50%;
+		margin-left: -(@ticket-thumbnail / 2);
+		position: absolute;
+		height: @ticket-thumbnail;
+		width: @ticket-thumbnail;
+
+		.box-shadow(3px 3px 6px 0, 80%)
+	}
+}
+
+*.table {
+	display: table;
+	width:100%;
+	*.row {
+		display: table-row;
+		width:100%;
+		*.cell {
+			display: table-cell;
+			text-align: center;
+			vertical-align: top;
+		}
+	}
+}
+
