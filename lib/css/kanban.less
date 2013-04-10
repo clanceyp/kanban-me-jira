@@ -18,21 +18,30 @@
 	font-size: 70%;
 	line-height: 160%;
 }
+.paper(@color: #fff){
+	background-color: @color;
+	background-image: url("/lib/i/lined_paper_transparent.png" );
+}
+
+
 body {
 	background-color: @base-color;
 	background-image: url("/lib/i/bg/@{base-bg-image}.png" );
 	font-family: @base-font-family;
 
-	.fontsize(@base-font-family)
+	.fontsize(@base-font-family);
 }
 h1,h2,h3,h4,h5,h6,p {
 	margin:0 0 4px 0;
 }
+#wrapper {
+	padding: 0 40px;
+}
 *.ticket {
-	background-color: #fff;
-	background-image: url("/lib/i/lined_paper_transparent.png" );
+	.paper;
 	display:inline-block;
 	min-height: @ticket-height;
+	margin-left: -(@ticket-width / 2);
 	padding:5px;
 	position: absolute;
 	width: (@ticket-width - 10);
@@ -68,15 +77,24 @@ h1,h2,h3,h4,h5,h6,p {
 
 *.table {
 	display: table;
+	margin:14px 0;
 	width:100%;
 	*.row {
 		display: table-row;
 		width:100%;
-		*.cell {
-			display: table-cell;
-			text-align: center;
-			vertical-align: top;
-		}
 	}
 }
-
+*.cell {
+	display: table-cell;
+	text-align: center;
+	vertical-align: top;
+}
+*.a-title-link {
+	display:inline-block;
+	.paper;
+}
+span.span-title {
+	display: inline-block;
+	font-size: 2em;
+	padding: 15px 40px;
+}

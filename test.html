@@ -3,52 +3,13 @@
 
 
 
-<head></head>
+<head>
+	<script src="lib/js/vendor/zepto.js"></script>
+	<script src="lib/js/vendor/can.js"></script>
+
+
+</head>
 <body>
-
-
-<script>
-
-var Promise = function() {} // Empty Promise ;)
-
-Promise.prototype.then = function (resolved, rejected) {
-// Do a state transition, based on the result
-};
-
-Promise.prototype.resolve = function (value) {
-// Transit to resolved
-	return value;
-};
-
-Promise.prototype.reject = function (error) {
-// Transit to rejected
-	throw new Error("didn't work")
-};
-
-Promise.prototype.when = function (value) {
- return value;
-};
-
-
-
-function doXHR(URL){
-	//Mkae a promise
-	var promise = new Promise();
-	setTimeout(function(){
-		promise.resolve(12);
-	},2000)
-
-	// Make the XHR call.
-	//xhr.send();
-
-	//Return the promise
-	return promise;
-}
-
-doXHR(window.location.href).then(function (data) {
-  console.log(data)
-});
-</script>
 
 
 </body>

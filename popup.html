@@ -9,6 +9,28 @@
 	    <script type="text/javascript" src="lib/js/vendor/can.view.mustache.js"></script>
 	    <script type="text/javascript" src="lib/js/constants.js"></script>
 		<script type="text/javascript" src="lib/js/popup.js"></script>
+	    <style>
+		    #refreshIcon {
+			    -webkit-animation-duration: 3s;
+			    -webkit-animation-iteration-count: 0;
+			    -webkit-animation-name: spin;
+		    }
+			@-webkit-keyframes spin {
+			  from {
+			    -webkit-transform: rotate(0deg)
+			  }
+			  to {
+			   -webkit-transform: rotate(360deg)
+			  }
+			}
+			p.loading {
+				display: none;
+				text-align: center;
+			}
+		    body.loading p.loading {
+			    display: block;
+		    }
+	    </style>
     </head>
     <body>
         <div id="wrapper">
@@ -16,7 +38,7 @@
                 <span>Refresh</span><img id="refreshIcon" src="lib/i/reload19.png" alt="Refresh Button" />
             </div>
 			<h1></h1>
-	        <h2></h2>
+	        <p class="loading"><img src="lib/i/anim-bar.gif"/></p>
 	        <p class="message"></p>
             <div id="display"></div>
         </div>

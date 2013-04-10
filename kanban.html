@@ -5,9 +5,10 @@
 		<link rel="stylesheet/less" type="text/css" href="lib/css/kanban.less" />
 		<script type="text/javascript" src="lib/js/vendor/less.js"></script>
 		<!-- load less first -->
+		<script type="text/javascript" src="lib/js/vendor/underscore.js"></script>
 		<script type="text/javascript" src="lib/js/vendor/zepto.js"></script>
-	    <script type="text/javascript" src="lib/js/vendor/can.js"></script>
-	    <script type="text/javascript" src="lib/js/vendor/can.view.mustache.js"></script>
+		<script type="text/javascript" src="lib/js/vendor/can.js"></script>
+		<script type="text/javascript" src="lib/js/vendor/can.view.mustache.js"></script>
 		<script type="text/javascript" src="lib/js/vendor/d3.js" charset="utf-8"></script>
 		<script type="text/javascript" src="lib/js/constants.js"></script>
 		<script type="text/javascript" src="lib/js/kanban.js"></script>
@@ -17,6 +18,7 @@
 				background-image:url(lib/i/reload19.png);
 			}
 		</style>
+	    <base target="_blank">
     </head>
     <body>
         <div id="wrapper">
@@ -34,7 +36,7 @@
         </script>
 		<script id="templateTitles"  type="text/mustache">
 			{{#columns}}
-				<div class="cell"><a><span>{{title}}</span></a></div>
+				<div class="cell" class="div-title"><a href="{{url}}" class="a-title-link"><span class="span-title">{{title}}</span></a></div>
 			{{/columns}}
 		</script>
     </body>
