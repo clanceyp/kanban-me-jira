@@ -7,11 +7,14 @@
 @ticket-height: 160px;
 @ticket-width: 300px;
 @ticket-thumbnail: 100px;
+@ticket-bg-colour: #FFFEE2;
+
+@column-width: 30%;
 
 
 
 
-.box-shadow(@style: 0 0 5px, @alpha: 50%) when (isnumber(@alpha)) {
+.box-shadow(@style: 3px 3px 3px, @alpha: 50%) when (isnumber(@alpha)) {
 	box-shadow: @style rgba(0, 0, 0, @alpha);
 }
 .fontsize(@family) when (@family = "Rock Salt"){
@@ -37,11 +40,20 @@ h1,h2,h3,h4,h5,h6,p {
 #wrapper {
 	padding: 0 40px;
 }
+#divRadiator {
+	position: relative;
+}
+#dataStore {
+	display:none;
+}
 *.ticket {
 	.paper;
+	.box-shadow;
+	background-color: @ticket-bg-colour;
 	display:inline-block;
-	min-height: @ticket-height;
+	height: @ticket-height;
 	margin-left: -(@ticket-width / 2);
+
 	padding:5px;
 	position: absolute;
 	width: (@ticket-width - 10);
@@ -49,12 +61,15 @@ h1,h2,h3,h4,h5,h6,p {
 	*.left,
 	*.right {
 		left:0;
-		min-height: @ticket-height;
+		height: @ticket-height;
 		padding:10px 5px 0 5px ;
 		position: absolute;
 		text-align: center;
 		top:0;
 		width: (@ticket-width / 2) - 10 ;
+	}
+	*.left {
+		overflow: hidden;
 	}
 	*.right {
 		border-left:1px dashed #888;
@@ -68,10 +83,10 @@ h1,h2,h3,h4,h5,h6,p {
 		left:50%;
 		margin-left: -(@ticket-thumbnail / 2);
 		position: absolute;
-		height: @ticket-thumbnail;
-		width: @ticket-thumbnail;
+		max-height: @ticket-thumbnail;
+		max-width: @ticket-thumbnail;
 
-		.box-shadow(3px 3px 6px 0, 80%)
+		.box-shadow
 	}
 }
 
@@ -88,10 +103,12 @@ h1,h2,h3,h4,h5,h6,p {
 	display: table-cell;
 	text-align: center;
 	vertical-align: top;
+	width: @column-width;
 }
 *.a-title-link {
 	display:inline-block;
 	.paper;
+	.box-shadow;
 }
 span.span-title {
 	display: inline-block;

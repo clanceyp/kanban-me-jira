@@ -19,10 +19,10 @@
 			<key>AAA-0001</key>
 			<summary>SUMMARY 001</summary>
 			<type />
-			<priority />
+			<priority>1</priority>
 			<status />
 			<resolution />
-			<assignee>test</assignee>
+			<assignee username="testing">test</assignee>
 		</item>
 		<item>
 			<title>Title 002</title>
@@ -32,10 +32,10 @@
 			<key>AAA-0002</key>
 			<summary>SUMMARY 001</summary>
 			<type />
-			<priority />
+			<priority>2</priority>
 			<status />
 			<resolution />
-			<assignee>test</assignee>
+			<assignee username="testing">test</assignee>
 		</item>
 		<item>
 			<title>Title 003</title>
@@ -45,10 +45,10 @@
 			<key>AAA-0003</key>
 			<summary>SUMMARY 003</summary>
 			<type />
-			<priority />
+			<priority>0</priority>
 			<status />
 			<resolution />
-			<assignee>test</assignee>
+			<assignee username="testing">test</assignee>
 		</item>
 		<item>
 			<title>Title 004</title>
@@ -58,10 +58,10 @@
 			<key>AAA-0004</key>
 			<summary>SUMMARY 004</summary>
 			<type />
-			<priority />
+			<priority>0</priority>
 			<status />
 			<resolution />
-			<assignee>test</assignee>
+			<assignee username="testing">test</assignee>
 		</item>
 
 </channel>
