@@ -8,8 +8,10 @@
 @ticket-width: 300px;
 @ticket-thumbnail: 100px;
 @ticket-bg-colour: #FFFEE2;
+@ticket-link-colour: #003300;
 
 @column-width: 30%;
+@column-header-colour: #333;
 
 
 
@@ -37,6 +39,13 @@ body {
 h1,h2,h3,h4,h5,h6,p {
 	margin:0 0 4px 0;
 }
+a {
+	color: @ticket-link-colour;
+	text-decoration: none;
+}
+a:hover, a:focus, a:active {
+	text-decoration: underline;
+}
 #wrapper {
 	padding: 0 40px;
 }
@@ -49,7 +58,6 @@ h1,h2,h3,h4,h5,h6,p {
 *.ticket {
 	.paper;
 	.box-shadow;
-	background-color: @ticket-bg-colour;
 	display:inline-block;
 	height: @ticket-height;
 	margin-left: -(@ticket-width / 2);
@@ -106,6 +114,7 @@ h1,h2,h3,h4,h5,h6,p {
 	width: @column-width;
 }
 *.a-title-link {
+	color:@column-header-colour;
 	display:inline-block;
 	.paper;
 	.box-shadow;
