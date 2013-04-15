@@ -73,7 +73,11 @@ a {
 	color:#036;
 	text-decoration: none;
 }
-a:hover {text-decoration: underline}
+a:hover,a.focus {text-decoration: underline;}
+h1 a {
+	border: 0 none!important;
+	outline: 0 none!important;
+}
 *.soft {
 	opacity:0.5;
 }
