@@ -12,56 +12,69 @@
             <edition>enterprise</edition>
         </build-info>
 		<item>
-			<title>Title 001</title>
+			<title>Title 001 Lorem ipsum dolor</title>
 			<link>link001</link>
 
-			<description>description 001</description>
+			<description>&lt;br/&gt;description 001 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
 			<key>AAA-0001</key>
-			<summary>SUMMARY 001</summary>
+			<summary>SUMMARY 001 Lorem ipsum dolor sit amet</summary>
 			<type />
 			<priority>1</priority>
 			<status />
 			<resolution />
-			<assignee username="testing">test</assignee>
+			<assignee username="testing1">test</assignee>
 		</item>
 		<item>
-			<title>Title 002</title>
+			<title>Title 002 Neque porro</title>
 			<link>link002</link>
 
-			<description>description 002</description>
+			<description>&lt;br/&gt;description 002 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
 			<key>AAA-0002</key>
-			<summary>SUMMARY 001</summary>
+			<summary>SUMMARY 002 Lorem ipsum adipisicing elit</summary>
 			<type />
 			<priority>2</priority>
 			<status />
 			<resolution />
-			<assignee username="testing">test</assignee>
+			<assignee username="testing2">test</assignee>
 		</item>
 		<item>
-			<title>Title 003</title>
+			<title>Title 003 Ipsum quia dolor sit</title>
 			<link>link003</link>
 
-			<description>description 003</description>
+			<description>&lt;br/&gt;description 003 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
 			<key>AAA-0003</key>
-			<summary>SUMMARY 003</summary>
+			<summary>SUMMARY 003 Lonsectetur adipisicing elit</summary>
 			<type />
-			<priority>0</priority>
+			<priority>3</priority>
 			<status />
 			<resolution />
-			<assignee username="testing">test</assignee>
+			<assignee username="testing6">test</assignee>
 		</item>
 		<item>
-			<title>Title 004</title>
+			<title>Title 004 Lorem idipisicing elit</title>
 			<link>link004</link>
 
-			<description>description 004</description>
+			<description>&lt;br/&gt;description 004 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
 			<key>AAA-0004</key>
-			<summary>SUMMARY 004</summary>
+			<summary>SUMMARY 004 Lorem idipisicing elit qui dolorem </summary>
 			<type />
-			<priority>0</priority>
+			<priority>4</priority>
 			<status />
 			<resolution />
-			<assignee username="testing">test</assignee>
+			<assignee username="testing4">test</assignee>
+		</item>
+		<item>
+			<title>Title 005 Neque porro est qui</title>
+			<link>link005</link>
+
+			<description>&lt;br/&gt;description 005 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</description>
+			<key>AAA-0005</key>
+			<summary>SUMMARY 005 Lorem ipsum adipisicing elit</summary>
+			<type />
+			<priority>5</priority>
+			<status />
+			<resolution />
+			<assignee username="testing5">test</assignee>
 		</item>
 
 </channel>
