@@ -10,10 +10,14 @@
 	    <script type="text/javascript" src="lib/js/constants.js"></script>
 		<script type="text/javascript" src="lib/js/popup.js"></script>
 	    <style>
+		    /*
+		    sadly implementing this animation
+		    stops the dynamic refresh and stalls
+		    the page in chrome 26.0.1410.65
+		    Will try it again in a later build
 		    #refreshIcon {
 			    -webkit-animation-duration: 3s;
 			    -webkit-animation-iteration-count: 0;
-			    -webkit-animation-name: spin;
 		    }
 			@-webkit-keyframes spin {
 			  from {
@@ -23,6 +27,11 @@
 			   -webkit-transform: rotate(360deg)
 			  }
 			}
+
+		    body.loading #refreshIcon {
+			    -webkit-animation-name: spin;
+		    }
+			*/
 			p.loading {
 				display: none;
 				text-align: center;
@@ -44,9 +53,9 @@
         </div>
 		<footer>
 			<nav>
-				<a id="login" href="">JIRA3</a>
-				| <a href="kanban.html">Kanban</a>
+				<a href="kanban.html">Kanban</a>
 				| <a href="options.html">Configuration</a>
+				| <a id="login" href="">JIRA</a>
 				| <a href="https://chrome.google.com/webstore/detail/kanban-me-jira" class="soft" id="extensionLink"></a>
 			</nav>
 		</footer>
