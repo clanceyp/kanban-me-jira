@@ -76,6 +76,9 @@
 	*.hidden {
 		display: none;
 	}
+	*.relative {
+		position: relative;
+	}
 	nav {
 
 	}
@@ -147,9 +150,9 @@
 		display: inline-block;
 		min-height: 18px;
 		min-width: 18px;
-		position: relative;
-		float:right;
-		margin-right: 130px;
+		position: absolute;
+		right: 100px;
+		top: 0;
 	}
 	span.more:focus span.help,
 	span.more:hover span.help{
