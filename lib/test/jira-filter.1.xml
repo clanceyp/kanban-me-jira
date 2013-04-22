@@ -23,6 +23,13 @@
 			<status />
 			<resolution />
 			<assignee username="testing11">test</assignee>
+			<node>
+				<child>
+					<blah someattribute="blah">
+						<yadda/>
+					</blah>
+				</child>
+			</node>
 		</item>
 		<item>
 			<title>Title 002 Neque porro</title>

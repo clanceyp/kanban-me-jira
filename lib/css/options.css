@@ -79,6 +79,9 @@
 	*.relative {
 		position: relative;
 	}
+	table.data {
+		border-collapse: collapse;
+	}
 	nav {
 
 	}
@@ -148,6 +151,9 @@
 		background-repeat: no-repeat;
 		cursor: default;
 		display: inline-block;
+		font-family: sans-serif;
+		font-size:13px!important;
+		font-weight: normal;
 		min-height: 18px;
 		min-width: 18px;
 		position: absolute;
@@ -177,4 +183,12 @@
 	}
 	form p.ml {
 		margin-left:150px
+	}
+	img.inedit {
+		-webkit-filter: grayscale(100%);
+	}
+	#ColumnInfo_container img:active {
+		left:1px;
+		position:relative;
+		top:1px;
 	}

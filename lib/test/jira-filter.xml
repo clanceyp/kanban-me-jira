@@ -23,6 +23,13 @@
 			<status />
 			<resolution />
 			<assignee username="testing1">test</assignee>
+			<boom>
+				<child>
+					<blah someattribute="blah">
+						<yadda/>
+					</blah>
+				</child>
+			</boom>
 		</item>
 		<item>
 			<title>Title 002 Neque porro</title>
@@ -36,6 +43,13 @@
 			<status />
 			<resolution />
 			<assignee username="testing2">test</assignee>
+			<node>
+				<child>
+					<blah someattribute="blah">
+						<yadda/>
+					</blah>
+				</child>
+			</node>
 		</item>
 		<item>
 			<title>Title 003 Ipsum quia dolor sit</title>
@@ -49,6 +63,13 @@
 			<status />
 			<resolution />
 			<assignee username="testing6">test</assignee>
+			<node>
+				<child>
+					<blah someattribute="blah">
+						<yadda/>
+					</blah>
+				</child>
+			</node>
 		</item>
 		<item>
 			<title>Title 004 Lorem idipisicing elit</title>
@@ -62,6 +83,13 @@
 			<status />
 			<resolution />
 			<assignee username="testing4">test</assignee>
+			<node>
+				<child>
+					<blah someattribute="blah">
+						<yadda/>
+					</blah>
+				</child>
+			</node>
 		</item>
 		<item>
 			<title>Title 005 Neque porro est qui</title>
@@ -75,6 +103,13 @@
 			<status />
 			<resolution />
 			<assignee username="testing5">test</assignee>
+			<node>
+				<child>
+					<blah someattribute="blah">
+						<yadda/>
+					</blah>
+				</child>
+			</node>
 		</item>
 
 </channel>

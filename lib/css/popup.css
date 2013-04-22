@@ -2,6 +2,7 @@
 html {
 }
 body {
+	background-attachment:fixed;
 	background-color: #DEF1FA;
 	background-image: url(http://www.atlassian.com/dms/wac/images/icons-home.png);
 	background-position: -200px bottom;
@@ -87,7 +88,7 @@ footer {
 	bottom:0;
 	font-size: 0.8em;
 	padding:8px 0;
-	position: absolute;
+	position: fixed;
 	text-align: center;
 	width:100%;
 }
