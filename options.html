@@ -78,46 +78,51 @@
 					<li><a href="#sectionHowTo">About</a></li>
 				</ul>
 			</nav>
-			<section id="sectionHowTo" class="hidden" style="position: relative;min-height: 300px;">
-				<h2>About</h2>
-
-				<p><strong id="appName"></strong> </p>
-				<p>version:	<strong id="appVersion"></strong></p>
-
-				<h3>Getting started</h3>
-				<p>This extension displays JIRA filters in the style of a Kanban wall.</p>
-				<h4>Setup</h4>
-				<p>
-					This extension works by displaying JIRA filters, so the first thing you need to do
-					is login to your JIRA instance and setup the filters you require, noting the
-					filter IDs.
-				</p>
-				<p>
-					You need to enter your basic JIRA information into the
-					setup form.
-				</p>
-				<h4>Advanced setup</h4>
-				<p>
-					You may need to amend the HTML template to show the information
-					you wish to see. For example, by default the popup shows JIRA
-					title and summary. These may not exist in your organisation or
-					you may wish to show something else, to do this edit
-					the mustache template in the advanced settings form,
-					changing the "title" and "summary" fields a appropriate.
-				</p>
-				<p>
-					The same goes for the kanban wall display.
-				</p>
-
-
-
-				<p><a href="lib/test/jasmine/SpecRunner.html">Run tests</a></p>
-
-				<span id="forkongithub"><a href="https://github.com/clanceyp/kanban-me-jira">Fork me on GitHub</a></span>
-
+			<section id="sectionHowTo" class="hidden">
+				<div style="width:80%">
+					<h2>About</h2>
+					<p><strong id="appName"></strong></p>
+					<p>version: <strong id="appVersion"></strong></p>
+					<h3>Getting started</h3>
+					<p>This extension displays JIRA filters in the style of a Kanban wall.</p>
+					<h4>Setup</h4>
+					<p>
+						To display JIRA filters, the first thing you need to do
+						is login to your JIRA instance and setup the filters you
+						require, noting the filter IDs.
+					</p>
+					<p>
+						You need to enter your basic JIRA information into the setup form.
+					</p>
+					<p>
+						Once you have entered your JIRA location and popup filter ID,
+						check the popup display is working.
+					</p>
+					<h4>Advanced setup</h4>
+					<p>
+						You may need to amend the HTML template to show the information
+						you wish to see. For example, by default the popup shows JIRA
+						title and summary. These may not exist in your organisation or
+						you may wish to show something else, to do this edit
+						the mustache template in the advanced settings form,
+						changing the "title" and "summary" fields a appropriate.
+					</p>
+					<p>
+						The same goes for the kanban wall display.
+					</p>
+					<h4>Reset settings</h4>
+					<p>
+						Items with a default value can be reset by double clicking on
+						the element.
+					</p>
+					<p>
+						To reset all the setting back to the default setting, click on the
+						"Reset default options" button.
+					</p>
+				</div>
 			</section>
-			<section id="sectionDonate" class="hidden">
-				<fieldset>
+			<section id="sectionDonate" class="hidden relative">
+				<fieldset class="">
 					<h2>Donate to our developers!</h2>
 					<p>Any and all donations gratefully received!!</p>
 					<form action="https://www.paypal.com/cgi-bin/webscr" id="formDonate" method="post" class="donate">
@@ -128,8 +133,11 @@
 						<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
 					</form>
 					<div style="width:300px;height:300px;overflow:hidden;position: relative;border:1px solid rgba(83,103,141,1);margin-bottom:20px;"><img src="lib/i/me-2013.png" style="width:400px;position: absolute; top:-20px;left:-40px" /></div>
+					<p><a href="lib/test/jasmine/SpecRunner.html">Run tests</a></p>
+					<span id="forkongithub"><a href="https://github.com/clanceyp/kanban-me-jira">Fork me on GitHub</a></span>
 
 				</fieldset>
+
 			</section>
 
 			<form id="formMyOptions">

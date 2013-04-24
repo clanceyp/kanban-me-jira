@@ -39,6 +39,9 @@
 		    body.loading p.loading {
 			    display: block;
 		    }
+		    body.loading #display {
+			    display:none;
+		    }
 	    </style>
     </head>
     <body>
@@ -55,7 +58,7 @@
 			<nav>
 				<a href="kanban.html">Kanban</a>
 				| <a href="options.html">Configuration</a>
-				| <a id="login" href="">JIRA</a>
+				| <a class="login"></a>
 				| <a href="https://chrome.google.com/webstore/detail/kanban-me-jira" class="soft" id="extensionLink"></a>
 			</nav>
 		</footer>

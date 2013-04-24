@@ -128,7 +128,7 @@
 		font-weight: bold;
 	}
 	*.help {
-		background-color: rgba(207,241,252,1);
+		background-color: #FFE4E1;
 		border:1px solid rgba(83,103,141,1);
 		border-radius: 4px;
 		box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
@@ -138,7 +138,7 @@
 		padding:8px;
 		position: absolute;
 		top:-4px;
-		width:130px;
+		width:240px;
 		z-index: 1;
 
 		-webkit-transition-property: opacity scale;

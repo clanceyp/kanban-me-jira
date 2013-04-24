@@ -72,9 +72,11 @@ summary {
 }
 a {
 	color:#036;
+}
+*.nav a, nav a, h1 a, h2 a, h3 a, h4 a  {
 	text-decoration: none;
 }
-a:hover,a.focus {text-decoration: underline;}
+* a:hover,* a.focus {text-decoration: underline;}
 h1 a {
 	border: 0 none!important;
 	outline: 0 none!important;
