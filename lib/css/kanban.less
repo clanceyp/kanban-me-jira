@@ -25,9 +25,9 @@
 }
 .paper(@color: #fff){
 	background-color: @color;
-	background-image: url(/lib/i/coffee001.png), url(/lib/i/coffee002.png), url(/lib/i/coffee002.png), url(/lib/i/lined_paper_transparent.png);
-    background-repeat: no-repeat, no-repeat, no-repeat, repeat;
-    background-position: -999px -999px,-999px -999px,-999px -999px, 0 0;
+	background-image: url(/lib/i/coffee001.png), url(/lib/i/coffee002.png), url(/lib/i/coffee003.png), url(/lib/i/coffee003.png), url(/lib/i/lined_paper_transparent.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+    background-position: -999px -999px,-999px -999px,-999px -999px,-999px -999px, 0 0;
 }
 
 
@@ -62,10 +62,13 @@ a:hover, a:focus, a:active {
 	.box-shadow;
 	display:inline-block;
 	height: @ticket-height;
+    left:500px;
 	margin-left: -(@ticket-width / 2);
+    opacity: 0;
 
 	padding:5px;
 	position: absolute;
+    top:400px;
 	width: (@ticket-width - 10);
 
 	*.left,
