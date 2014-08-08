@@ -1,6 +1,6 @@
 {
 	"name": "Kanban me JIRA"
-	,"version": "1.10"
+	,"version": "1.11"
 	,"manifest_version": 2
 	,"description": "Display JIRA filters in the style of a Kanban board"
 	,"icons": { "16": "lib/i/note.png"
@@ -24,6 +24,7 @@
 		]
 	}
 	,"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+
 	,"options_page": "options.html"
 	,"permissions": [
 		"tabs"
