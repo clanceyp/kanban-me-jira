@@ -195,3 +195,23 @@
 		position:relative;
 		top:1px;
 	}
+	.bgImagePrivewContainer {
+		border-radius : 5px;
+		box-shadow: 0 0 3px rgba(0,0,0,0.3);
+		padding-top : 10px;
+		padding-bottom : 20px;
+	}
+	.bgImagePrivewContainer label {
+		font-weight : bold; 
+		text-shadow : 0 0 2px white;
+	}
+	.bgImagePrivewContainer .more {
+		top: 10px;
+	}
+
+
+
+
+
+
+
