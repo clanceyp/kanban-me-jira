@@ -1,15 +1,15 @@
 {
 	"name": "Kanban me JIRA"
-	,"version": "1.13"
+	,"version": "1.15"
 	,"manifest_version": 2
 	,"description": "Display JIRA filters in the style of a Kanban board"
-	,"icons": { "16": "lib/i/note.png"
+	,"icons": { "16": "lib/i/notes.png"
 				,"32": "lib/i/kanban.png"
 				,"48": "lib/i/kanban.png"
 				,"128": "lib/i/kanban.png"
 	}
 	,"browser_action": {
-		"default_icon": "lib/i/note.png"
+		"default_icon": "lib/i/notes-full-01.png"
 		,"default_title": "Kanban me JIRA"
 		,"default_popup": "popup.html"
 	}
