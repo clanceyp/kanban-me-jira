@@ -138,7 +138,8 @@
 		padding:8px;
 		position: absolute;
 		top:-4px;
-		width:240px;
+		max-width:280px;
+		min-width:220px;
 		z-index: 1;
 
 		-webkit-transition-property: opacity scale;

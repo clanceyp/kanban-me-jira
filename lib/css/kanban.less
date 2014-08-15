@@ -7,6 +7,7 @@
 @ticket-height: 160px;
 @ticket-width: 300px;
 @ticket-thumbnail: 100px;
+@ticket-thumbnail-top: 30px;
 @ticket-bg-colour: #FFFEE2;
 @ticket-link-colour: #003300;
 
@@ -25,7 +26,11 @@
 }
 .paper(@color: #fff){
 	background-color: @color;
-	background-image: url(/lib/i/coffee001.png), url(/lib/i/coffee002.png), url(/lib/i/coffee003.png), url(/lib/i/coffee003.png), url(/lib/i/lined_paper_transparent.png);
+	background-image: url(/lib/i/coffee001.png), 
+						url(/lib/i/coffee002.png), 
+						url(/lib/i/coffee003.png), 
+						url(/lib/i/coffee003.png), 
+						url(/lib/i/lined_paper_transparent_light.png);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
     background-position: -999px -999px,-999px -999px,-999px -999px,-999px -999px, 0 0;
 }
@@ -91,7 +96,7 @@ a:hover, a:focus, a:active {
 	}
 	img {
 		background-color: #fff;
-		bottom:-30px;
+		top: @ticket-thumbnail-top;
 		border:0 none;
 		left:50%;
 		margin-left: -(@ticket-thumbnail / 2);
