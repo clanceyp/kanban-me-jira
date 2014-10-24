@@ -36,11 +36,11 @@ body {
 h1,h2 {
 	color:#036;
 	font-family: "kulturista-web",serif;
-	font-size:1.6em;
+	font-size:1.6rem;
 	font-weight: normal;
 	margin:0 0 8px 0;
 }
-h2 {font-size: 1.2em;}
+h2 {font-size: 1.2rem;}
 summary::-webkit-details-marker {
 	color:#036;
 	font-size: 80%;
@@ -66,7 +66,7 @@ summary {
 	margin-top:4px;
 }
 #display {
-	font-size: 0.8em;
+	font-size: 0.8rem;
 	padding-left:2px;
 	width:340px;
 }
@@ -88,7 +88,7 @@ footer {
 	background-color: #fff;
 	border-top:1px dashed #888;
 	bottom:0;
-	font-size: 0.8em;
+	font-size: 0.8rem;
 	padding:8px 0;
 	position: fixed;
 	text-align: center;
