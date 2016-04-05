@@ -1,6 +1,6 @@
 {
 	"name": "Kanban me JIRA"
-	,"version": "1.20.0"
+	,"version": "1.20.2"
 	,"manifest_version": 2
 	,"description": "Display JIRA filters in the style of a Kanban board"
 	,"icons": { "16": "lib/i/notes.png"
@@ -30,5 +30,6 @@
 		,"http://*/*"
 		,"https://*/*"
 		,"background"
+		,"notifications"
 	]
 }
